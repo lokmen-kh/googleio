@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>google io</title>
+</head>
+<body>
+    <nav >
+        <i><img src="/icon/menu.png" alt="menu"></i>
+        <div class="logo"><img src="/asset/DF24_big_logo_black.png" alt="gdg" srcset=""></div>
+        <ul>
+            <li>Hero</li>
+            <li>About the event</li>
+            <li>Speakers</li>
+            <li>Join our Discord</li>
+            <li>FAQ</li>
+        </ul>
+        <!-- <button>Sign up</button> -->
+    </nav>
+    <section class="sec1">
+        <main>
+            <div class="back"></div>
+            <h1>Google I/O Extended Ghardaia 2025</h1>
+            <h2>Join us for an inspiring day of tech talks, hands-on sessions, and networking with the developer community</h2>
+            <a href="http://"><button>Register Now</button></a>
+            <!-- <div class="image"><img src="/asset/io25-explore-hero.webp" alt=""></div> -->
+        </main>
+    </section>
+     <section class="sec2">
+       <h1>About Google I/O Extended</h1>
+       <p>Google I/O Extended Ghardaia brings together developers, designers, and tech enthusiasts to explore the latest innovations from Google. From AI to cloud, mobile
+        , and web, we'll dive into technologies that shape the future.</p>
+        <div class="cards">
+            <div class="minicard">
+                <img src="/icon/group (1).png" alt="">
+                <h3>Community</h3>
+                <p>Connect with like-minded developers and tech enthusiasts</p>
+            </div>
+            <div class="minicard">
+                <img src="/icon/business-presentation.png" alt="">
+                <h3>Learning</h3>
+                <p>Hands-on workshops and inspiring tech talks</p>
+            </div>
+            <div class="minicard">
+                <img src="/icon/solutions (1).png" alt="">
+                <h3>Innovation</h3>
+                <p>Explore cutting-edge Google technologies</p>
+            </div>        </div>
+    </section>
+    <section class="sec3">
+        <h1>Meet Our Speakers</h1>
+        <div class="cards">
+            <div class="minicard">
+                <img src="/image/123_AQnWp4b.webp" alt="">
+                <h2>Abderrahmane SAOUDI</h2>
+                <h3>AI/ML Engineer at Google</h3>
+            </div>
+            <div class="minicard">
+                <img src="/image/123_AQnWp4b.webp" alt="">
+                <h2>Abderrahmane SAOUDI</h2>
+                <h3>AI/ML Engineer at Google</h3>
+            </div>
+            <div class="minicard">
+                <img src="/image/123_AQnWp4b.webp" alt="">
+                <h2>Abderrahmane SAOUDI</h2>
+                <h3>AI/ML Engineer at Google</h3>
+            </div>
+            <div class="minicard">
+                <img src="/image/123_AQnWp4b.webp" alt="">
+                <h2>Abderrahmane SAOUDI</h2>
+                <h3>AI/ML Engineer at Google</h3>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <h1>Join the GDG Community</h1>
+        <p>Connect with other developers, get updates, share your projects, and collaborate — all on our official Discord server.</p>
+        <button>Join Now</button>
+    </section>
+    <section class="sec5">
+        <h1>Frequently Asked Questions</h1>
+        <div class="qa-box">
+  <p class="question">What is Google Developers?<span>+</span></p>
+  <p class="answer">Google Developers is a platform that provides tools, APIs, and resources for developers.</p>
+</div>
+
+<div class="qa-box">
+  <p class="question">Is the event free?<span>+</span></p>
+  <p class="answer">Yes! Google I/O Extended Ghardaia is completely free for all attendees.</p>
+</div>
+
+<div class="qa-box">
+  <p class="question">Do I need to register?<span>+</span></p>
+  <p class="answer">Yes, registration helps us manage seats and share important updates with you.</p>
+</div>
+<div class="qa-box">
+  <p class="question">Who can attend?<span>+</span></p>
+  <p class="answer">Anyone passionate about technology is welcome! Whether you're a student, professional developer, or just curious about tech.</p>
+</div>
+
+    </section>
+    <footer>
+        <h3>© 2025 Google Developer Groups Ghardaia — Made with ❤️ for the community.</h3>
+           <ul>
+            <li>Hero</li>
+            <li>About the event</li>
+            <li>Speakers</li>
+            <li>Join our Discord</li>
+            <li>FAQ</li>
+        </ul>
+        <hr>
+        <h5>Google I/O Extended events are community-run and not affiliated with Google Inc.</h5>
+    </footer>
+</body>
+<script>
+  document.querySelectorAll(".qa-box").forEach(box => {
+    box.addEventListener("click", () => {
+      box.classList.toggle("active");
+
+      const answer = box.querySelector(".answer");
+      const symbol = box.querySelector(".question span");
+
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        symbol.textContent = "+";
+      } else {
+        answer.style.display = "block";
+        symbol.textContent = "-";
+      }
+    });
+  });
+</script>
+</html>
