@@ -125,6 +125,7 @@ section{
 .sec1{
    /* background-image: linear-gradient(to bottom ,#4285F4,white); */
    position: relative;
+   min-height: 0px;
 }
 main{
     position: relative;
@@ -180,6 +181,7 @@ main .image{
     /* background-color: rgba(255, 255, 255, 0.753);
      */
      width: 100vw;
+     min-height: 0px;
      background: url("/asset/sl_072622_51930_05.jpg");
      background-size:cover;
      background-repeat: no-repeat;
@@ -241,6 +243,7 @@ backdrop-filter: blur(30px);
     align-items: center;
     padding: 50px 0px;
     margin: 0px;
+    min-height: 0px;
 }
 .sec3 h1{
     color: #4285F4;
@@ -402,13 +405,15 @@ text-align: center;
   }
   .sec7{
     position: relative;
-    display: flex;
+    
     background: url('/asset/io25-home-lg-card-bg-mobile.webp');
     /* width: 100%; */
     background-size: cover;
+    min-height: 0px;
     background-position: center;
     background-repeat: no-repeat;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
