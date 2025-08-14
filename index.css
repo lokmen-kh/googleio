@@ -391,6 +391,7 @@ text-align: center;
     /* background: url('asset/io25-home-bottom.webp'); */
     position: relative;
     width: 100%;
+    min-height: 0px;
   }
   .sec6 img{
     position: relative;
@@ -475,6 +476,13 @@ main h2{
 .sec3 .minicard{
     width: 90%;
 }
+ .sec6 img{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    height: 300px;
+
+  }
 }
 
 @media screen and (width<= 1080px) {
