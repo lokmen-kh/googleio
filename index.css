@@ -179,9 +179,11 @@ main .image{
     position: relative;
     /* background-color: rgba(255, 255, 255, 0.753);
      */
+     width: 100vw;
      background: url("/asset/sl_072622_51930_05.jpg");
      background-size:cover;
-     /* background-repeat: no-repeat; */
+     background-repeat: no-repeat;
+     background-position: center;
      backdrop-filter: blur(100px);
      /* opacity: 30%; */
     display: flex;
@@ -384,6 +386,35 @@ text-align: center;
   /* Optional: Google colors for question title */
   .qa-box.active .question {
     color: #4285F4; /* Blue when opened */
+  } 
+  .sec6{
+    /* background: url('asset/io25-home-bottom.webp'); */
+    position: relative;
+    width: 100%;
+  }
+  .sec6 img{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    height: 100%;
+
+  }
+  .sec7{
+    position: relative;
+    display: flex;
+    background: url('/asset/io25-home-lg-card-bg-mobile.webp');
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sec7 img{
+width: 300px;
+height: 250px;
   }
   footer{
     width: 100%;
