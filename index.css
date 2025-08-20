@@ -44,55 +44,31 @@ nav{
     top: 0px;
    backdrop-filter: blur(30px);
    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.247) ;
+   position: relative;
+   overflow: hidden;
+   height: 60px;
 }
  .logo{
     position: relative;
     padding:1px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-nav img{
+nav .logo img{
+  position: absolute;
     /* width:100px ; */
     height: 50px;
+      opacity: 0;                 /* start hidden */
+    animation: fade 60s infinite;
 
 }
-nav ul{
-width: 80%;
-/* height: 30px; */
-/* background-color: white; */
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-color: black;
-position: relative;
-bottom: 0px;
-}
-nav ul li{
-    margin : 0px 10px;
-    cursor: pointer;
-    border-radius: 20px;
-     padding: 0px 10px;
-}
-nav ul li:hover{
-    color: #4285F4;
-    cursor: pointer;
-    /* background: linear-gradient(135deg,white ); */
-    box-shadow: 1 1 10 1 #1573ff49;
-    transform: scale(1.1);
-    transition: all 0.1s ease-in-out;
-    
-}
-nav i img{
-    width: 30px;
-    height: 30px;
-    margin: 1px 15px;
-    cursor: pointer;
-    display: none;
-}
-nav i img:hover{
-    transform: scale(1.1);
-    transition: all 0.1s ease-in-out;
-}
+
+
+
+
  button{
     position: relative;
     width: 100px;
@@ -126,6 +102,7 @@ section{
    /* background-image: linear-gradient(to bottom ,#4285F4,white); */
    position: relative;
    min-height: 0px;
+   margin: 50px 0px 20px ;
 }
 main{
     position: relative;
@@ -407,8 +384,11 @@ text-align: center;
     position: relative;
     
     background: url('/asset/io25-home-lg-card-bg-mobile.webp');
+    background-color: black;
+    /* background-color: black; */
     /* width: 100%; */
-    background-size: cover;
+    color: white;
+    background-size:cover;
     min-height: 0px;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,6 +398,7 @@ text-align: center;
     align-items: center;
     flex-wrap: wrap;
   }
+  
   .sec7 img{
 width: 300px;
 height: 250px;
@@ -464,6 +445,35 @@ text-align: center;
     font-weight: 100;
     text-align: center;
   }
+    
+
+  
+
+  /* 12 slides × 3s = 36s total. We stagger each image by 3s. */
+  .logo img:nth-child(1)  { animation-delay: 5s;  }
+  .logo img:nth-child(2)  { animation-delay: 10s;  }
+  .logo img:nth-child(3)  { animation-delay: 15s;  }
+  .logo img:nth-child(4)  { animation-delay: 20s;  }
+  .logo img:nth-child(5)  { animation-delay: 25s; }
+  .logo img:nth-child(6)  { animation-delay: 30s; }
+  .logo img:nth-child(7)  { animation-delay: 35s; }
+  .logo img:nth-child(8)  { animation-delay: 40s; }
+  .logo img:nth-child(9)  { animation-delay: 45s; }
+  .logo img:nth-child(10) { animation-delay: 50s; }
+  .logo img:nth-child(11) { animation-delay: 55s; }
+  .logo img:nth-child(12) { animation-delay: 60s; }
+
+  /* Fade in (0.5s), stay (2s), fade out (0.5s) => 3s per slide */
+  @keyframes fade {
+    0%      { opacity: 0; }
+    1.4%    { opacity: 1; }   /* ~0.5s into the slide */
+    6.9%    { opacity: 1; }   /* holds for ~2s */
+    8.3%    { opacity: 0; }   /* ~3s mark */
+    100%    { opacity: 0; }
+  }
+
+  /* Optional: pause on hover */
+  .logo:hover img { animation-play-state: paused; }
 @media screen and (width <= 768px) {
     main{
         margin: 100px 0px;
