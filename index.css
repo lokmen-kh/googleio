@@ -159,6 +159,7 @@ main .image{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 .ticket img{
   width: 70px;
